@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interiuz</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet" />
+    <link href="https://fonts.cdnfonts.com/css/general-sans" rel="stylesheet" />
+
+    <!-- FontAwesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- =========================================
+         HEADER & HERO SECTION
+         ========================================= -->
+    <div class="wrapper" id="home">
+      <div class="header">
+        <button class="hamburger" aria-label="Toggle menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="nav">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact" class="contact-btn">Contact Us</a>
+        </div>
+
+        <a class="logo" href="#home">
+          <img src="./images/logo.svg" alt="Logo" />
+          <p class="title">Interiuz</p>
+        </a>
+      </div>
+
+      <section class="hero">
+        <div class="hero-title">
+          <p>Your Best Design Architect Agency</p>
+        </div>
+
+        <div class="hero-actions">
+          <button class="hero-btn-primary">View Projects</button>
+          <button class="hero-btn-secondary">Get In Touch</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- =========================================
+         HERO SLIDER SECTION
+         ========================================= -->
+    <section class="slider-section">
+      <div class="slider-container">
+        <!-- The drag area (invisible overlay) -->
+        <div class="drag-area" id="heroDragArea"></div>
+
+        <!-- The moving background images -->
+        <div class="slider-track" id="heroTrack">
+          <div
+            class="slide"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1355&q=80&quot;);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1355&q=80&quot;);
+            "
+          ></div>
+          <div
+            class="slide"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1355&q=80&quot;);
+            "
+          ></div>
+        </div>
+
+        <!-- Content Overlay (Stays Fixed) -->
+        <div class="slider-content">
+          <p>
+            Take a look at some of our recent projects to get an idea of the
+            level of quality you can expect when you choose us for your next
+            project.
+          </p>
+        </div>
+
+        <!-- Pagination Dots (Stays Fixed) -->
+        <div class="slider-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         SERVICES SECTION
+         ========================================= -->
+    <section class="services" id="services">
+      <div class="services-container">
+        <div class="services-header">
+          <h2 class="services-title">We Build Your<br />Dream House</h2>
+          <p class="services-desc">
+            we specialize in turning your dream house into a reality. Our team
+            of experienced professionals will work closely with you to
+            understand your vision and create a custom plan to bring it to life.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <div class="service-info">
+              <h3>Architectural Consultation</h3>
+              <p>
+                we offer comprehensive architectural consultation services to
+                help clients bring their vision to life.
+              </p>
+              <a href="#" class="view-service"
+                >View Service <i class="fa-solid fa-arrow-up-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <div class="service-info">
+              <h3>Architectural Design</h3>
+              <p>
+                we specialize in creating innovative, functional, and visually
+                stunning architectural designs.
+              </p>
+              <a href="#" class="view-service"
+                >View Service <i class="fa-solid fa-arrow-up-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon"><i class="fa-solid fa-trowel"></i></div>
+            <div class="service-info">
+              <h3>Construction Building</h3>
+              <p>
+                We offer comprehensive construction building services for
+                projects of all sizes. With experienced professionals teams.
+              </p>
+              <a href="#" class="view-service"
+                >View Service <i class="fa-solid fa-arrow-up-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </div>
+            <div class="service-info">
+              <h3>Architectural Maintenance</h3>
+              <p>
+                we offer comprehensive architectural maintenance services to
+                keep your building looking its best.
+              </p>
+              <a href="#" class="view-service"
+                >View Service <i class="fa-solid fa-arrow-up-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         TEAM SECTION
+         ========================================= -->
+    <section class="team-section">
+      <div class="wrapper">
+        <div class="team-layout">
+          <div class="team-text">
+            <h2>Meet With Our<br />Skilled Team</h2>
+            <p>
+              Our team has a proven track record of delivering high-quality
+              work, thanks to their extensive experience in the industry.
+            </p>
+            <button class="team-btn">See All Team</button>
+          </div>
+
+          <div class="team-cards-wrapper">
+            <div class="team-cards">
+              <div
+                class="team-card"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80&quot;);
+                "
+              >
+                <div class="team-info">
+                  <h3>Adam Lee</h3>
+                  <p>Consultant Manager</p>
+                </div>
+              </div>
+              <div
+                class="team-card"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80&quot;);
+                "
+              >
+                <div class="team-info">
+                  <h3>Robert Ruperts</h3>
+                  <p>CEO</p>
+                </div>
+              </div>
+              <div
+                class="team-card"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80&quot;);
+                "
+              >
+                <div class="team-info">
+                  <h3>Johnson Chang</h3>
+                  <p>Construction Manager</p>
+                </div>
+              </div>
+              <div
+                class="team-card"
+                style="
+                  background-image: url(&quot;https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80&quot;);
+                "
+              >
+                <div class="team-info">
+                  <h3>David Smith</h3>
+                  <p>Lead Architect</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         PROJECTS SECTION
+         ========================================= -->
+    <section class="projects-section">
+      <div class="wrapper">
+        <div class="projects-header">
+          <h2>Browse Our<br />Projects</h2>
+          <div class="projects-desc">
+            <p>
+              Take a look at some of our recent projects to get an idea of the
+              level of quality you can expect when you choose us for your next
+              project.
+            </p>
+            <a href="#"
+              >View More Projects <i class="fa-solid fa-arrow-up-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="projects-carousel-wrapper">
+          <div class="projects-slider" id="projectsSlider">
+            <div
+              class="project-card"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&quot;);
+              "
+            >
+              <div class="project-info">
+                <span class="project-date">JANUARY - JULY 2025</span>
+                <h3>Construction Building</h3>
+                <i class="fa-solid fa-arrow-up-right"></i>
+              </div>
+            </div>
+            <div
+              class="project-card"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&quot;);
+              "
+            >
+              <div class="project-info">
+                <span class="project-date">MARCH - AUGUST 2025</span>
+                <h3>Residential Complex</h3>
+                <i class="fa-solid fa-arrow-up-right"></i>
+              </div>
+            </div>
+            <div
+              class="project-card"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&quot;);
+              "
+            >
+              <div class="project-info">
+                <span class="project-date">MAY - SEPTEMBER 2025</span>
+                <h3>Commercial Office</h3>
+                <i class="fa-solid fa-arrow-up-right"></i>
+              </div>
+            </div>
+            <div
+              class="project-card"
+              style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80&quot;);
+              "
+            >
+              <div class="project-info">
+                <span class="project-date">OCTOBER - DEC 2023</span>
+                <h3>Modern Villa</h3>
+                <i class="fa-solid fa-arrow-up-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         PROCESS SECTION
+         ========================================= -->
+    <section class="process-section" id="how-it-works">
+      <div class="wrapper">
+        <div class="process-header">
+          <h2>We Define The Dream<br />Building</h2>
+          <p>ABOUT OUR PROCESS</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card">
+            <div class="process-step-row">
+              <span class="step-number">01.</span>
+              <h3 class="step-title">Discuss</h3>
+            </div>
+            <p class="step-desc">
+              We believe that effective communication is key to the success of
+              any project. That's why we have a structured discussion process in
+              place to ensure that all of your needs and concerns are addressed.
+            </p>
+            <div class="step-tags">
+              <span>Consultation</span> &bull; <span>Design Ideation</span>
+            </div>
+          </div>
+          <div class="process-card">
+            <div class="process-step-row">
+              <span class="step-number">02.</span>
+              <h3 class="step-title">Observe</h3>
+            </div>
+            <p class="step-desc">
+              We have a structured observation process in place to ensure that
+              you are informed and involved every step of the way. It's
+              important to have a clear understanding of what is happening on
+              site.
+            </p>
+            <div class="step-tags">
+              <span>Ground Observation</span> &bull; <span>Planning</span>
+            </div>
+          </div>
+          <div class="process-card">
+            <div class="process-step-row">
+              <span class="step-number">03.</span>
+              <h3 class="step-title">Execute</h3>
+            </div>
+            <p class="step-desc">
+              The architect works with the contractors during the construction
+              process to ensure that the project is being built according to the
+              design and specifications. The architect may be involved in final
+              inspections.
+            </p>
+            <div class="step-tags">
+              <span>Contracting</span> &bull; <span>Corrective Action</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         REVIEWS SECTION
+         ========================================= -->
+    <section class="reviews-section" id="testimonials">
+      <div class="wrapper">
+        <div class="reviews-header">
+          <h2>
+            Our Reviews From Clients <i class="fa-solid fa-quote-right"></i>
+          </h2>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                  alt="Hannah Barbera"
+                />
+              </div>
+              <div class="reviewer-details">
+                <h4>Hannah Barbera</h4>
+                <p>Myeris Apartment</p>
+              </div>
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <div class="review-divider"></div>
+            <p class="review-text">
+              "The design they came up with was exactly what I had hoped for,
+              and they were able to bring it to life with attention to detail
+              and high-quality craftsmanship. They also navigated any challenges
+              that arose during the construction process."
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                  alt="Adam Lee"
+                />
+              </div>
+              <div class="reviewer-details">
+                <h4>Adam Lee</h4>
+                <p>Boro Resort</p>
+              </div>
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <div class="review-divider"></div>
+            <p class="review-text">
+              "I recently worked with the team on the design and construction of
+              my new home. From the initial consultation to the final
+              walkthrough, the team was professional, responsive, and dedicated
+              to meeting my needs and my expectations."
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                  alt="Cyntia Leonardo"
+                />
+              </div>
+              <div class="reviewer-details">
+                <h4>Cyntia Leonardo</h4>
+                <p>The Continental Hotel</p>
+              </div>
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <div class="review-divider"></div>
+            <p class="review-text">
+              "The design they came up with was exactly what I had hoped for,
+              and they were able to bring it to life with attention to detail
+              and high-quality craftsmanship. They also navigated any challenges
+              that arose during the construction process."
+            </p>
+          </div>
+
+          <div class="review-card">
+            <div class="reviewer-info">
+              <div class="reviewer-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80"
+                  alt="Mike Pordan"
+                />
+              </div>
+              <div class="reviewer-details">
+                <h4>Mike Pordan</h4>
+                <p>Red Doors Owner</p>
+              </div>
+            </div>
+            <div class="review-stars">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </div>
+            <div class="review-divider"></div>
+            <p class="review-text">
+              "I recently worked with the team on the design and construction of
+              my new home. From the initial consultation to the final
+              walkthrough, the team was professional, responsive, and dedicated
+              to meeting my needs and my expectations."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         FOOTER SECTION
+         ========================================= -->
+    <footer class="footer" id="contact">
+      <div class="wrapper">
+        <div class="footer-top">
+          <h2>Have Dream House<br />to Build ?</h2>
+          <a href="#" class="footer-contact-btn">
+            Contact Us <i class="fa-solid fa-arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div class="footer-main">
+          <div class="footer-left">
+            <div class="footer-logo">
+              <div class="logo-icon"><i class="fa-solid fa-building"></i></div>
+              <span>Interiuz</span>
+            </div>
+
+            <div class="footer-newsletter">
+              <p>SIGN UP FOR OUR<br />MONTHLY NEWSLETTER</p>
+              <form class="newsletter-form">
+                <input type="email" placeholder="Email address" required />
+                <button type="submit">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>WORK</h4>
+              <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Industries</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">See all</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>COMPANY</h4>
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>SOCIAL</h4>
+              <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>2026 &nbsp;|&nbsp; Interiuz &copy; All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Your JavaScript -->
+    <script src="./main.js"></script>
+  </body>
+</html>
